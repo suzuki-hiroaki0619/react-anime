@@ -12,7 +12,7 @@ class App extends React.Component {
 
   onClick = async () => {
     const result = await axios.get(
-      'http://api.moemoe.tokyo/anime/v1/master/2019/1'
+      'https://api.moemoe.tokyo/anime/v1/master/2019/1'
     );
 
     const animes = result.data.map(anime => {
@@ -74,7 +74,7 @@ class App extends React.Component {
           </div>
         </div>
 
-      
+
         <div class="mt-5 row">{anime_list}</div>
       </div>
     );
